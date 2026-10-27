@@ -1,0 +1,14 @@
+# Core Web Framework and Server
+flask>=3.0.0,<4.0.0
+
+# Environment and Configuration Management
+python-dotenv>=1.0.0,<2.0.0
+
+# HTTP Client for Upstream Translation APIs
+requests>=2.31.0,<3.0.0
+
+# Automated Testing Framework
+pytest>=8.0.0,<9.0.0
+
+# Text-to-Speech (TTS) Universal Audio Streaming
+gTTS>=2.5.0,<3.0.0
