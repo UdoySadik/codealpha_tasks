@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyGlot AI — Intelligent Language Translation Tool</title>
+    <meta name="description" content="Modern, secure, and responsive language translation tool built for the CodeAlpha AI Internship. Supports 30+ languages, auto-detection, and text-to-speech.">
+    
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Neo-Glassmorphic Stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <!-- Application Header -->
+    <header class="app-header">
+        <div class="brand-container">
+            <div class="brand-icon" aria-hidden="true">🌐</div>
+            <div class="brand-text">
+                <h1>PolyGlot AI</h1>
+                <p>CodeAlpha AI Internship &bull; Task 1</p>
+            </div>
+        </div>
+
+        <div class="header-controls">
+            <!-- Active Provider Badge -->
+            <div class="provider-badge fallback" id="provider-badge" title="Active Translation Service Engine">
+                <span class="badge-dot" aria-hidden="true"></span>
+                <span id="provider-name">Dev Fallback Mode</span>
+            </div>
+
+            <!-- Theme Toggle Button -->
+            <button class="btn-icon-header" id="theme-toggle" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+                <span id="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="app-main">
+        <!-- Dual-Panel Translation Workspace -->
+        <section class="translation-workspace" aria-label="Translation Workspace">
+            <!-- Source Language Card -->
+            <div class="card source-card">
+                <div class="card-header">
+                    <span class="card-label">Source Language</span>
+                    <div class="select-wrapper">
+                        <select class="select-language" id="source-language" aria-label="Select source language">
+                            <!-- Populated dynamically via languages.js -->
+                        </select>
+                        <span class="select-arrow" aria-hidden="true">▼</span>
+                    </div>
+                </div>
+
+                <div class="textarea-wrapper">
+                    <textarea 
+                        id="source-text" 
+                        class="text-input" 
+                        placeholder="Type or paste text to translate here..." 
+                        aria-label="Text to translate" 
+                        maxlength="5000" 
+                        rows="8"
+                        spellcheck="true"
+                    ></textarea>
+                </div>
+
+                <div class="card-toolbar">
+                    <div class="toolbar-left">
+                        <button class="btn-tool" id="btn-clear" title="Clear input text" aria-label="Clear source text">
+                            <span aria-hidden="true">✕</span> Clear
+                        </button>
+                    </div>
+                    <div class="toolbar-right">
+                        <button class="btn-tool" id="btn-tts-source" title="Listen to source pronunciation" aria-label="Listen to source pronunciation">
+                            <span aria-hidden="true">🔊</span> Listen
+                        </button>
+                        <span class="character-counter" id="char-counter" aria-live="polite">0 / 5000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Swap Action Divider -->
+            <div class="swap-divider">
+                <button class="btn-swap" id="btn-swap" title="Swap languages and text contents" aria-label="Swap source and target languages">
+                    <span aria-hidden="true">⇄</span>
+                </button>
+            </div>
+
+            <!-- Target Language Card -->
+            <div class="card target-card">
+                <div class="card-header">
+                    <span class="card-label">Target Language</span>
+                    <div class="select-wrapper">
+                        <select class="select-language" id="target-language" aria-label="Select target language">
+                            <!-- Populated dynamically via languages.js -->
+                        </select>
+                        <span class="select-arrow" aria-hidden="true">▼</span>
+                    </div>
+                </div>
+
+                <div class="textarea-wrapper">
+                    <textarea 
+                        id="target-text" 
+                        class="text-output" 
+                        placeholder="Translation will appear here..." 
+                        aria-label="Translated output" 
+                        readonly 
+                        rows="8"
+                    ></textarea>
+                </div>
+
+                <div class="card-toolbar">
+                    <div class="toolbar-left">
+                        <button class="btn-tool" id="btn-tts-target" title="Listen to translation pronunciation" aria-label="Listen to translated speech">
+                            <span aria-hidden="true">🔊</span> Listen
+                        </button>
+                    </div>
+                    <div class="toolbar-right">
+                        <button class="btn-tool" id="btn-copy" title="Copy translated text to clipboard" aria-label="Copy translated text">
+                            <span id="copy-icon" aria-hidden="true">📋</span> 
+                            <span id="copy-text">Copy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Primary Translate Action CTA -->
+        <div class="action-container">
+            <button class="btn-translate" id="btn-translate" aria-label="Translate text">
+                <span class="spinner" id="loading-spinner" aria-hidden="true"></span>
+                <span class="btn-icon-arrow" aria-hidden="true">⚡</span>
+                <span id="btn-translate-text">Translate</span>
+            </button>
+            <span class="shortcut-hint">Press <kbd class="kbd">Ctrl</kbd> + <kbd class="kbd">Enter</kbd> to translate</span>
+        </div>
+
+        <!-- Status / Feedback Banner -->
+        <div class="status-banner" id="status-banner" role="alert" aria-live="polite">
+            <span id="status-icon" aria-hidden="true">ℹ️</span>
+            <span id="status-message">Ready</span>
+        </div>
+
+        <!-- Translation History Drawer -->
+        <section class="history-section" id="history-section" aria-label="Recent Translation History">
+            <div class="history-header" id="history-toggle" role="button" tabindex="0" aria-expanded="true" aria-controls="history-list">
+                <div class="history-title">
+                    <span class="history-toggle-icon" id="history-toggle-icon" aria-hidden="true" style="transition: transform 0.2s ease;">▾</span>
+                    <span aria-hidden="true">🕒</span>
+                    <span>Recent Translations</span>
+                    <span class="history-count" id="history-count">0</span>
+                </div>
+                <div class="history-controls">
+                    <button class="btn-tool" id="btn-clear-history" title="Clear all translation history" style="font-size: 0.78rem;">Clear All</button>
+                </div>
+            </div>
+            <div class="history-list" id="history-list">
+                <div class="empty-history-text" id="empty-history-text">No recent translations in this session.</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <p>PolyGlot AI &bull; CodeAlpha Artificial Intelligence Internship &bull; Secure Backend Translation Proxy</p>
+    </footer>
+
+    <!-- JavaScript Application Scripts -->
+    <script src="/static/js/languages.js?v=1.2"></script>
+    <script src="/static/js/app.js?v=1.2"></script>
+</body>
+</html>
