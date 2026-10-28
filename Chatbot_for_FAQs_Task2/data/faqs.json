@@ -1,0 +1,314 @@
+[
+  {
+    "id": "faq_acad_001",
+    "category": "Academic Registration & Records",
+    "question": "How do I register for semester courses?",
+    "patterns": [
+      "How do I enroll in classes for next semester?",
+      "Where is the course registration portal?",
+      "Can I add or enroll in classes online?",
+      "What are the steps for enrolling in university courses?"
+    ],
+    "answer": "Course registration is completed online through the Student Academic Portal. Log in with your university credentials, navigate to 'Course Registration', select your upcoming semester, add your approved course codes, and submit to finalize your schedule.",
+    "verified": true,
+    "notes": "Standard university online portal enrollment workflow."
+  },
+  {
+    "id": "faq_acad_002",
+    "category": "Academic Registration & Records",
+    "question": "What is the deadline to add or drop a course?",
+    "patterns": [
+      "When does the add drop period end?",
+      "How long do I have to drop a class without penalty?",
+      "What is the last date to add a class?",
+      "Can I withdraw from a course after the semester starts?"
+    ],
+    "answer": "The official add/drop period typically concludes at the end of the second academic week of the semester. Courses dropped within this window do not appear on your permanent academic transcript. Check the Academic Calendar for exact semester dates.",
+    "verified": true,
+    "notes": "Standard academic calendar policy."
+  },
+  {
+    "id": "faq_acad_003",
+    "category": "Academic Registration & Records",
+    "question": "How can I request an official academic transcript?",
+    "patterns": [
+      "Where can I get my official grades transcript?",
+      "How do I order transcripts for job applications or grad school?",
+      "Can I request a digital copy of my transcript?",
+      "What is the procedure for transcript issuance?"
+    ],
+    "answer": "Official transcripts can be ordered through the Office of the Registrar via the Student Portal under 'Academic Records' > 'Order Transcript'. Both secure digital e-transcripts (PDF) and sealed physical paper copies are available.",
+    "verified": true,
+    "notes": "Standard university registrar ordering process."
+  },
+  {
+    "id": "faq_acad_004",
+    "category": "Academic Registration & Records",
+    "question": "How do I apply for a course prerequisite waiver?",
+    "patterns": [
+      "Can I take a course without the prerequisite?",
+      "How do I request a prerequisite override?",
+      "Who approves waiver forms for course prerequisites?",
+      "What do I do if a course prerequisite is blocking my registration?"
+    ],
+    "answer": "To request a prerequisite override, complete the Prerequisite Waiver Form available on the Registrar's website. You must obtain signed approval from the course instructor and your Department Chair before submission.",
+    "verified": true,
+    "notes": "Standard department override procedure."
+  },
+  {
+    "id": "faq_acad_005",
+    "category": "Academic Registration & Records",
+    "question": "How do I check my degree audit and graduation requirements?",
+    "patterns": [
+      "How do I track my degree completion progress?",
+      "Where can I see which courses I still need to graduate?",
+      "How does the degree audit report work?",
+      "Am I eligible to graduate this year?"
+    ],
+    "answer": "You can generate an interactive Degree Audit Report through the Student Portal under 'Academic Progress'. The audit analyzes your completed credits against degree requirements and highlights remaining core and elective requirements.",
+    "verified": true,
+    "notes": "Standard automated degree audit system."
+  },
+
+  {
+    "id": "faq_fin_001",
+    "category": "Tuition & Financial Services",
+    "question": "What payment methods are accepted for tuition fees?",
+    "patterns": [
+      "How can I pay my semester tuition fees?",
+      "Can I pay tuition using credit card or online banking?",
+      "Where do I pay my university tuition bill?",
+      "What are the options for settling semester fees?"
+    ],
+    "answer": "Tuition fees can be paid via the Student Financial Portal using credit/debit card, ACH electronic bank transfer, or at the Bursar's Office via certified bank draft. International students can also pay via approved international wire transfer services.",
+    "verified": true,
+    "notes": "Standard university bursar payment channels."
+  },
+  {
+    "id": "faq_fin_002",
+    "category": "Tuition & Financial Services",
+    "question": "Can I pay my tuition in monthly installments?",
+    "patterns": [
+      "Is there a tuition payment plan available?",
+      "Can I split my semester tuition into monthly payments?",
+      "How do I enroll in the installment payment plan?",
+      "What are the terms of the semester payment plan?"
+    ],
+    "answer": "Yes, students in good financial standing may enroll in the Semester Installment Payment Plan. This divides tuition and mandatory fees into multiple equal monthly installments across the semester for a nominal enrollment fee.",
+    "verified": true,
+    "notes": "Standard multi-installment payment plan structure."
+  },
+  {
+    "id": "faq_fin_003",
+    "category": "Tuition & Financial Services",
+    "question": "What happens if I miss the tuition payment deadline?",
+    "patterns": [
+      "What is the penalty for late tuition payment?",
+      "Will I be dropped from classes if I pay tuition late?",
+      "Is there a late fee for unpaid semester dues?",
+      "What occurs if my tuition payment is past due?"
+    ],
+    "answer": "Accounts with unpaid balances after the due date incur a late fee and will have a financial hold placed on their student account. A financial hold prevents course registration, transcript issuance, and diploma release.",
+    "verified": true,
+    "notes": "Standard bursar late policy."
+  },
+  {
+    "id": "faq_fin_004",
+    "category": "Tuition & Financial Services",
+    "question": "How and when are student scholarships disbursed?",
+    "patterns": [
+      "When will my scholarship money be applied to my account?",
+      "How do scholarship funds get credited to tuition?",
+      "What is the disbursement timeline for financial aid?",
+      "Why has my scholarship not reflected on my balance yet?"
+    ],
+    "answer": "Approved academic and institutional scholarships are automatically credited to your student account during the first week of classes after course enrollment confirmation. Any excess credit balance is refunded via direct deposit.",
+    "verified": true,
+    "notes": "Standard financial aid disbursement cycle."
+  },
+  {
+    "id": "faq_fin_005",
+    "category": "Tuition & Financial Services",
+    "question": "How do I request a tuition refund after dropping a course?",
+    "patterns": [
+      "Can I get a refund if I drop a class?",
+      "What is the refund schedule for dropped courses?",
+      "How long does a tuition refund take to process?",
+      "Where does my tuition refund get sent?"
+    ],
+    "answer": "Tuition refunds are calculated based on the official withdrawal date in accordance with the University Refund Schedule (100% in week 1, 75% in week 2, 50% in week 3). Refunds are returned to the original payment method or deposited directly into your linked bank account.",
+    "verified": true,
+    "notes": "Standard prorated withdrawal refund policy."
+  },
+
+  {
+    "id": "faq_card_001",
+    "category": "Campus ID & Physical Access",
+    "question": "Where can I get my student ID card?",
+    "patterns": [
+      "How do I obtain my university student ID card?",
+      "Where is the campus card office located?",
+      "What documents do I need to bring to get my student ID?",
+      "Can new students order an ID card online?"
+    ],
+    "answer": "New students can obtain their student ID card at the Campus Card & Security Services Office. You must present an official government-issued photo ID (passport or driver's license) and your university student ID number. You can also upload a compliant photo online beforehand.",
+    "verified": true,
+    "notes": "Standard campus ID issuing procedure."
+  },
+  {
+    "id": "faq_card_002",
+    "category": "Campus ID & Physical Access",
+    "question": "What should I do if I lose my student ID card?",
+    "patterns": [
+      "How do I replace a lost or stolen student ID?",
+      "Can I get a replacement ID card if lost?",
+      "What is the fee for replacing a lost student card?",
+      "Where do I report a missing campus ID card?"
+    ],
+    "answer": "If your student ID card is lost, immediately deactivate it on the Card Services Portal to prevent unauthorized access. Then visit the Campus Card Office to receive a replacement card. A standard administrative replacement fee applies.",
+    "verified": true,
+    "notes": "Standard lost card deactivation and reissuance."
+  },
+  {
+    "id": "faq_card_003",
+    "category": "Campus ID & Physical Access",
+    "question": "How do I get keycard access to specialized campus labs and buildings?",
+    "patterns": [
+      "How do I request card swipe access to computer science labs?",
+      "Why is my student ID not opening the engineering building door?",
+      "Who grants building access for after-hours study?",
+      "How do I request lab door access on my ID card?"
+    ],
+    "answer": "Building and specialized laboratory access permissions are granted based on your enrolled academic major and research requirements. Submit an Access Request Form signed by your department lab coordinator to Campus Security.",
+    "verified": true,
+    "notes": "Standard campus facility access control."
+  },
+  {
+    "id": "faq_card_004",
+    "category": "Campus ID & Physical Access",
+    "question": "How do I apply for a student campus parking permit?",
+    "patterns": [
+      "Where do I buy a campus parking pass?",
+      "How much does student parking cost for the semester?",
+      "Can resident and commuter students park on campus?",
+      "What are the steps to register a vehicle for campus parking?"
+    ],
+    "answer": "Student parking permits are purchased online through the University Parking Portal. You will need your vehicle registration document, driver's license, and student ID. Parking permits are assigned per semester on a first-come, first-served basis.",
+    "verified": true,
+    "notes": "Standard university parking management system."
+  },
+
+  {
+    "id": "faq_lib_001",
+    "category": "Library & Academic Resources",
+    "question": "How many books can a student borrow from the university library?",
+    "patterns": [
+      "What is the borrowing limit for library books?",
+      "How long can I check out a book from the library?",
+      "Can undergraduate students borrow research books?",
+      "How many items can I borrow with my library card?"
+    ],
+    "answer": "Undergraduate students may borrow up to 15 standard circulation books concurrently for a loan period of 28 days. Graduate students may borrow up to 30 items for an entire semester. Items can be renewed online if not requested by another patron.",
+    "verified": true,
+    "notes": "Standard academic library circulation rules."
+  },
+  {
+    "id": "faq_lib_002",
+    "category": "Library & Academic Resources",
+    "question": "How do I reserve a group study room in the library?",
+    "patterns": [
+      "Can students book study rooms in the library?",
+      "Where is the library room reservation system?",
+      "How many hours can I book a study room for?",
+      "What are the rules for booking library group rooms?"
+    ],
+    "answer": "Group study rooms can be reserved online through the Library Services website up to 7 days in advance. Bookings are limited to 2 consecutive hours per group per day to ensure equitable access.",
+    "verified": true,
+    "notes": "Standard automated library room reservation system."
+  },
+  {
+    "id": "faq_lib_003",
+    "category": "Library & Academic Resources",
+    "question": "How do I access academic journals and digital databases from off-campus?",
+    "patterns": [
+      "Can I read IEEE, ACM, or JSTOR papers from home?",
+      "How do I use the library proxy for off-campus research?",
+      "Where do I log in to access university online research databases?",
+      "How do students access digital journals remotely?"
+    ],
+    "answer": "Off-campus access to digital journals and academic databases (e.g., IEEE Xplore, ACM Digital Library, JSTOR, ScienceDirect) is provided via the Library Proxy. Log in with your institutional credentials when prompted on the library search portal.",
+    "verified": true,
+    "notes": "Standard EZproxy / institutional digital library access."
+  },
+  {
+    "id": "faq_lib_004",
+    "category": "Library & Academic Resources",
+    "question": "What is Interlibrary Loan (ILL) and how do I request a book from another institution?",
+    "patterns": [
+      "Can the library get a book from another university?",
+      "How does interlibrary loan work for research articles?",
+      "How long does an interlibrary loan request take?",
+      "Where do I submit an ILL request for unavailable material?"
+    ],
+    "answer": "If a research paper or book is not in the university collection, you can place a free Interlibrary Loan (ILL) request through the ILLiad portal on the library website. Digital articles typically arrive within 48 hours; physical books take 5-7 business days.",
+    "verified": true,
+    "notes": "Standard academic Interlibrary Loan network."
+  },
+
+  {
+    "id": "faq_it_001",
+    "category": "Campus IT & Technical Support",
+    "question": "How do I connect my laptop or smartphone to the campus Wi-Fi network?",
+    "patterns": [
+      "What is the password for the university Wi-Fi?",
+      "How do I set up eduroam on my phone or computer?",
+      "How can students connect to campus wireless internet?",
+      "Why is my laptop unable to connect to campus Wi-Fi?"
+    ],
+    "answer": "Connect your device to the 'eduroam' or campus secure Wi-Fi network. When prompted, enter your full university email address as the username and your campus password. Ensure 802.1X enterprise security is selected.",
+    "verified": true,
+    "notes": "Standard eduroam enterprise wireless configuration."
+  },
+  {
+    "id": "faq_it_002",
+    "category": "Campus IT & Technical Support",
+    "question": "How do I reset my university account password if locked out?",
+    "patterns": [
+      "I forgot my student portal password, how do I reset it?",
+      "How can I unlock my university email account?",
+      "Where is the self-service password reset portal?",
+      "What should I do if my campus credentials do not work?"
+    ],
+    "answer": "Navigate to the Self-Service Password Reset (SSPR) portal. Enter your university username, verify your identity via two-factor authentication (SMS code or authenticator app), and create a new secure password.",
+    "verified": true,
+    "notes": "Standard SSPR identity workflow."
+  },
+  {
+    "id": "faq_it_003",
+    "category": "Campus IT & Technical Support",
+    "question": "What free software licenses and tools are provided to students?",
+    "patterns": [
+      "Do students get free Microsoft Office 365?",
+      "Can I get free MATLAB, AutoCAD, or IntelliJ licenses?",
+      "Where do I download licensed university software?",
+      "What software discounts are available with my student email?"
+    ],
+    "answer": "All enrolled students receive complimentary access to Microsoft 365 (Word, Excel, PowerPoint), MATLAB, GitHub Student Developer Pack, and educational licenses for JetBrains and Autodesk products via the IT Software Portal.",
+    "verified": true,
+    "notes": "Standard higher-ed software licensing agreements."
+  },
+  {
+    "id": "faq_it_004",
+    "category": "Campus IT & Technical Support",
+    "question": "Where is the Campus IT Helpdesk located and what are their support hours?",
+    "patterns": [
+      "How do I contact campus IT support for computer issues?",
+      "What is the phone number or location for the IT Helpdesk?",
+      "Can IT help fix my laptop hardware or virus problem?",
+      "Where do I get in-person technical support on campus?"
+    ],
+    "answer": "In-person IT Helpdesk walk-in support is located on the Ground Floor of the Student Center (Room 105), operating Monday through Friday from 8:00 AM to 6:00 PM. You can also submit support tickets via email at ithelpdesk@university.edu.",
+    "verified": false,
+    "notes": "Illustrative office hours, room number, and contact email for testing."
+  }
+]
