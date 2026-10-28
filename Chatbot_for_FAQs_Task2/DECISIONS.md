@@ -1,7 +1,7 @@
 # 📜 Architecture Decision Records (ADR) — FAQ Chatbot
 
-> **Document Status:** All decisions below are **PROPOSED** for user review and approval in Stage 0.  
-> Once approved via the `APPROVE DOCUMENTATION` command, their status will transition to **APPROVED**.
+> **Document Status:** All decisions below have been **APPROVED** by the project sponsor.  
+> Architecture decisions are locked for phased implementation.
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## ADR-001: Technology Stack Selection
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 The project requires building a functional, maintainable, transparent NLP FAQ chatbot for the CodeAlpha Artificial Intelligence Internship. The solution must run 100% locally on standard developer hardware without paid API keys, cloud subscriptions, or complex infrastructure.
@@ -41,7 +41,7 @@ Adopt **Option 1**: Python 3.10+, Streamlit for the user interface, scikit-learn
 
 ## ADR-002: FAQ Knowledge Base Domain Selection
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 The project prompt requires selecting a clearly scoped domain with realistic questions and verified answers, avoiding invented facts or policies. We evaluated multiple candidates:
@@ -61,7 +61,7 @@ Propose **Option 1: University Student Academic & Campus Services**.
 
 ## ADR-003: Knowledge Base Storage Format & Schema
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 FAQ questions and answers must be stored separately from matching and application logic in a maintainable, structured format.
@@ -99,7 +99,7 @@ Store the FAQ dataset in **`data/faqs.json`** using a structured schema:
 
 ## ADR-004: NLP Preprocessing & Lemmatization Pipeline
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 Natural-language user queries exhibit varied word forms (e.g., "registered", "registering", "registration"). Text must be sanitized and normalized before vectorization.
@@ -125,7 +125,7 @@ Adopt **NLTK-based normalization**:
 
 ## ADR-005: Vector Representation & Similarity Metric
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 We must convert text documents into numerical representations and calculate similarity to retrieve the most relevant answer.
@@ -151,7 +151,7 @@ Use **`scikit-learn.feature_extraction.text.TfidfVectorizer`** with `ngram_range
 
 ## ADR-006: Similarity Threshold & Fallback Policy
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 When users ask out-of-domain questions (e.g., "How do I bake a cake?"), a pure nearest-neighbor lookup will still find the "closest" FAQ, even if it is completely irrelevant.
@@ -177,7 +177,7 @@ Establish a default threshold **$\tau = 0.30$** (configurable via `config.py` an
 
 ## ADR-007: Presentation Layer (Streamlit Framework)
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 The chatbot requires a user-friendly, responsive chat interface that displays conversation history, status banners, suggested prompts, and administrative metadata.
@@ -203,7 +203,7 @@ Implement the interactive user interface using **Streamlit**.
 
 ## ADR-008: Automated Testing Framework & Quality Gates
 
-### Status: **PROPOSED** (Awaiting Stage 0 Approval)
+### Status: **APPROVED**
 
 ### Context:
 Strict engineering standards require automated testing at every phase covering exact matches, paraphrasing, empty inputs, out-of-domain rejection, and threshold boundaries.
